@@ -19,7 +19,15 @@ def download_video(url,save_path):
         print(f"Error: {e}")
 
 
-url=""
-save_path="/Users/abhiraj/Downloads"
+def open_file_dialog():
+    folder=filedialog.askdirectory()
+    if folder:
+        print(f"Selected folder: {folder}")
+    return folder
 
-download_video(url,save_path)
+
+if __name__=="__main__":
+    root = tk.Tk()
+    root.withdraw()
+
+
