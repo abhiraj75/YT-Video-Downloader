@@ -30,4 +30,7 @@ if __name__=="__main__":
     root = tk.Tk()
     root.withdraw()
 
+    video_url=input("Please enter a YouTube url: ")
+    save_dir = open_file_dialog
+
 
