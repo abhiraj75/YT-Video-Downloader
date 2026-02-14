@@ -31,6 +31,12 @@ if __name__=="__main__":
     root.withdraw()
 
     video_url=input("Please enter a YouTube url: ")
-    save_dir = open_file_dialog
+    save_dir = open_file_dialog()
+
+    if not save_dir:
+        print("Please select a folder!")
+    else:
+        print("Downloading...")
+        download_video(video_url,save_dir)
 
 
