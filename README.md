@@ -1,116 +1,92 @@
-📥 YouTube Video Downloader (Python + yt-dlp)
+# 📥 YouTube Video Downloader (Python)
 
-A simple Python-based YouTube video downloader that lets users download videos in MP4 format and choose a save location using a folder selection dialog.
+A simple Python tool to download YouTube videos in MP4 format using `yt-dlp` and select the download folder using a file dialog.
 
-This tool uses:
+---
 
-yt-dlp for downloading videos
+## 🚀 Features
 
-tkinter for folder selection
+- Download videos in best available quality
+- Save videos in MP4 format
+- Folder selection using GUI dialog
+- Lightweight and easy to use
+- Cross-platform (Windows, macOS, Linux)
 
-Command-line input for URLs
+---
 
-🚀 Features
+## 📦 Requirements
 
-✅ Download YouTube videos in best available MP4 quality
+- Python 3.7 or above
+- Internet connection
 
-✅ Select download folder using GUI dialog
+### Libraries Used
 
-✅ Simple and lightweight
+- yt-dlp
+- tkinter (pre-installed with Python)
 
-✅ Error handling for failed downloads
+---
 
-✅ Works on Windows, macOS, and Linux
+## 🔧 Installation
 
-📦 Requirements
+### 1. Clone the Repository
 
-Make sure you have:
-
-Python 3.7+
-
-Internet connection
-
-Required libraries:
-
-yt-dlp
-
-tkinter (usually pre-installed with Python)
-
-🔧 Installation
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/your-username/youtube-downloader.git
 cd youtube-downloader
-
-2️⃣ Create Virtual Environment (Optional but Recommended)
+2. (Optional) Create Virtual Environment
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
-
-3️⃣ Install Dependencies
+3. Install Dependency
 pip install yt-dlp
-
-
-tkinter is included with most Python installations. If not, install it from your OS package manager.
-
 ▶️ Usage
-Run the Script
+Run the script using:
+
 python downloader.py
-
 Steps
+Enter the YouTube video URL.
 
-Enter the YouTube video URL in the terminal.
+Select a folder from the dialog.
 
-A folder selection dialog will open.
+Download starts automatically.
 
-Choose the folder where you want to save the video.
+Video will be saved in selected folder.
 
-The download will start automatically.
-
-Example
-Please enter a YouTube url: https://www.youtube.com/watch?v=example123
+📌 Example
+Please enter a YouTube url: https://www.youtube.com/watch?v=abc123
 Selected folder: /Users/abhiraj/Downloads
 Downloading...
 Video Downloaded Successfully!
-
-📂 Output Format
-
-Downloaded videos are saved as:
+📂 Output
+Videos are saved as:
 
 Video_Title.mp4
-
-
 Example:
 
-My Favorite Song.mp4
-
-
-They will appear inside the selected folder.
-
+My Song.mp4
 ⚠️ Error Handling
-
-The script handles:
+The program handles:
 
 Invalid URLs
 
-Network issues
+Network errors
 
 Download failures
 
-Unexpected errors
+Unexpected crashes
 
-Example error:
+Example:
 
 Download failed!
 Reason: Video unavailable
-
-🛠️ Project Structure
+📁 Project Structure
 youtube-downloader/
 │
 ├── downloader.py
 └── README.md
+📜 Disclaimer
+This project is for educational and personal use only.
 
-📜 Legal Disclaimer
+Downloading copyrighted content without permission may violate YouTube’s Terms of Service and local laws.
 
-This tool is intended for educational and personal use only.
-
-Downloading copyrighted content without permission may violate YouTube’s Terms of Service and local laws. Use responsibly.
+Use responsibly.
